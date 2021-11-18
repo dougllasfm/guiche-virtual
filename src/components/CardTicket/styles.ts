@@ -43,5 +43,6 @@ export const Confirm = styled.div`
     border-radius: 3px;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
   }
 `

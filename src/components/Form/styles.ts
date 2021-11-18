@@ -30,10 +30,6 @@ export const Container = styled.div`
       outline: 1px solid var(--primary);
     }
   }
-  a {
-    text-decoration: none;
-    color: var(--white);
-  }
 
   button {
     cursor: pointer;

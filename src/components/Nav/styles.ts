@@ -30,55 +30,16 @@ export const NavBar = styled.div`
     font-size: 12px;
     color: var(--white);
   }
-  a {
-    font-size: 14px;
-    color: var(--white);
-  }
-  .modal {
-    position: fixed;
-    top: 80px;
-    right: 330px;
-    bottom: 80px;
-    left: 330px;
-    background: #fff;
-    z-index: 9999;
-    opacity: 0;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-  }
-
-  .modal h2,
-  p {
-    color: #000;
-  }
-
-  .modal:target {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .modal > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 15px 20px;
-    background: #fff;
-  }
-
-  .fechar {
-    text-decoration: none;
-    position: absolute;
-    width: 30px;
-    right: -15px;
-    top: -20px;
-    text-align: center;
-    line-height: 30px;
-    margin-top: 5px;
-    background: #fff;
-    border-radius: 50%;
+  > button {
+    background: var(--primary);
+    cursor: pointer;
     font-size: 16px;
-    color: #000;
+    color: var(--white);
+    padding: 10px 14px;
+    border-radius: 3px;
+
+    &:hover {
+      background: rgb(230, 255, 255, 0.25);
+    }
   }
 `

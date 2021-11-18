@@ -1,6 +1,11 @@
+/* eslint-disable react/button-has-type */
+import { useState } from 'react'
+import ModalLogin from '../ModalLogin'
 import { Container, NavBar } from './styles'
 
 const Nav = function Nav() {
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <Container>
       <h1>
@@ -8,18 +13,10 @@ const Nav = function Nav() {
       </h1>
       <NavBar>
         <span>Atendimento</span>
-        <a href="#abrirModal">Faça seu login</a>
-        <div id="abrirModal" className="modal">
-          <a href="#fechar" title="Fechar" className="fechar">
-            X
-          </a>
-          <h2>Faça seu login</h2>
-          <p>Esta é uma simples janela de modal.</p>
-          <p>
-            Você pode fazer qualquer coisa aqui, página de Login, pop-ups, ou
-            formulários
-          </p>
-        </div>
+        <button onClick={() => setOpenModal(true)}>Faça seu login</button>
+        {openModal && (
+          <ModalLogin statusModal={openModal} setOpenModal={setOpenModal} />
+        )}
       </NavBar>
     </Container>
   )

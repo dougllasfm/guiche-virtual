@@ -1,7 +1,10 @@
 /* eslint-disable react/button-has-type */
+import { useNavigate } from 'react-router-dom'
 import { Container, Company, Schedules, Confirm } from './styles'
 
 const CardTicket = function CardTicket() {
+  const navigate = useNavigate()
+
   return (
     <Container>
       <Company>
@@ -23,7 +26,9 @@ const CardTicket = function CardTicket() {
       </Schedules>
       <Confirm>
         <span>R$ 80,00</span>
-        <button>Selecionar</button>
+        <button onClick={() => navigate('/escolher-poltrona')}>
+          Selecionar
+        </button>
       </Confirm>
     </Container>
   )
