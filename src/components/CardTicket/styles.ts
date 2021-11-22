@@ -10,6 +10,7 @@ export const Container = styled.div`
   padding: 30px 18px;
 
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.24);
+  color: var(--primary);
 `
 
 export const Company = styled.div``
@@ -30,10 +31,6 @@ export const Confirm = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  span {
-    font-weight: bold;
-  }
 
   button {
     margin-left: 25px;

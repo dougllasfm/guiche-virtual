@@ -1,17 +1,17 @@
-import { useEffect } from 'react'
-import useAddAcent from '../../../hooks/useAddAcent'
+/* eslint-disable react/no-unstable-nested-components */
+import { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { AcentContext } from '../../../contexts/AcentContext'
 import { Container, AcentSelected, Options, Button } from './styles'
 
 const Footer = function Footer() {
-  const { ArrayAcents } = useAddAcent()
-  useEffect(() => {
-    console.log(ArrayAcents)
-  }, ArrayAcents)
+  const { acents } = useContext(AcentContext)
+  const navigate = useNavigate()
   return (
     <Container>
       <AcentSelected>
         <span>Poltronas selecionadas</span>
-        <span>{ArrayAcents[0]}</span>
+        <span>{`${acents}`}</span>
       </AcentSelected>
       <Options>
         <div>
@@ -27,7 +27,13 @@ const Footer = function Footer() {
           <span>Ocupado</span>
         </div>
       </Options>
-      <Button>Confirmar</Button>
+      <Button
+        onClick={() => {
+          navigate('/comprovante')
+        }}
+      >
+        Confirmar reserva
+      </Button>
     </Container>
   )
 }

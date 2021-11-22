@@ -1,6 +1,10 @@
+import { useContext } from 'react'
+import { AcentContext } from '../../../contexts/AcentContext'
 import { Container } from './styles'
 
 const Scale = function Scale() {
+  const { acents } = useContext(AcentContext)
+
   return (
     <Container>
       <div>
@@ -20,7 +24,7 @@ const Scale = function Scale() {
           </li>
         </ul>
       </div>
-      <div className="price">R$ 80,00</div>
+      <div className="price">R$ {acents.length * 80.0}</div>
     </Container>
   )
 }

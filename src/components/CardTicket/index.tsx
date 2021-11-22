@@ -25,7 +25,7 @@ const CardTicket = function CardTicket() {
         </div>
       </Schedules>
       <Confirm>
-        <span>R$ 80,00</span>
+        <strong>R$ 80,00</strong>
         <button onClick={() => navigate('/escolher-poltrona')}>
           Selecionar
         </button>
