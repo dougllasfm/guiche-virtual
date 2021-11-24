@@ -39,9 +39,7 @@ export const AcentContextProvider = function AcentContextProvider(
   }
 
   function listReserveds(acent: string) {
-    console.log(acent)
     reserveds.push(acent)
-    console.log(reserveds)
   }
 
   return (

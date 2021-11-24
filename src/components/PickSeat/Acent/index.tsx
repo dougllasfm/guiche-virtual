@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable consistent-return */
 /* eslint-disable prettier/prettier */
-import { useState, useContext, useEffect } from 'react'
+import { useState, useContext } from 'react'
 import { Label } from './styles'
 import { AcentContext } from '../../../contexts/AcentContext'
 
@@ -15,17 +15,16 @@ const Acent = function Acent({ number, statusAcents }: Props) {
 
   const [acent, setAcent] = useState(() => {
    if (reserveds.find(element => element === number) ) {
-     return reserveds.find(element => element === number)
+     return 2
    }
      return statusAcents
-
   })
 
 
   function SetAcent() {
     if (acents.length <= 3) {
-      if (statusAcents !== 2) {
-        if (statusAcents === 1) {
+      if (acent !== 2) {
+        if (acent === 1) {
           setAcent(0)
           removeAcent(number)
         } else {
@@ -33,7 +32,7 @@ const Acent = function Acent({ number, statusAcents }: Props) {
           addAcent(number)
         }
       }
-    } else if (statusAcents === 1) {
+    } else if (acent === 1) {
       setAcent(0)
       removeAcent(number)
     } else alert('O limite de poltronas que vc pode comprar é 4!')
@@ -41,10 +40,10 @@ const Acent = function Acent({ number, statusAcents }: Props) {
 
   function classNameGeneration() {
     let name = 'not-reserved'
-    if (statusAcents === 1) {
+    if (acent === 1) {
       name = 'selected'
     }
-    if (statusAcents === 2) {
+    if (acent === 2) {
       name = 'reserved'
     }
     return name
