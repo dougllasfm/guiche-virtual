@@ -7,14 +7,19 @@ export const Container = styled.div`
   position: relative;
   top: 40px;
 
-  margin: 0 130px;
-  height: 110px;
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
   border-radius: 5px;
   padding: 24px 16px;
 
   box-shadow: 0 4px 8px rgb(0, 0, 0, 24%);
   border-color: #fff;
   background: #fff;
+
+  div {
+    display: flex;
+  }
 
   input {
     padding: 10px;
@@ -42,5 +47,29 @@ export const Container = styled.div`
     background-color: var(--orange);
     padding: 3px 6px;
     border-radius: 3px;
+  }
+
+  @media (max-width: 1048px) {
+    flex-direction: column;
+    width: 80%;
+
+    top: 80px;
+    button {
+      margin-top: 8px;
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+
+  @media (max-width: 925px) {
+    top: 140px;
+    div {
+      display: block;
+      width: 100%;
+    }
+    input {
+      margin: 3px 0;
+      width: 100%;
+    }
   }
 `

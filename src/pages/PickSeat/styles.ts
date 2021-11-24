@@ -17,8 +17,13 @@ export const Main = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
-  margin: 25px 125px 0;
+  width: 90%;
+  max-width: 980px;
+
+  margin: 15px auto;
+  margin-bottom: 80px;
   padding: 35px 8px;
   background: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.24);

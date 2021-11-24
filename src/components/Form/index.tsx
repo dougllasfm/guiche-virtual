@@ -8,10 +8,15 @@ const Form = function Form() {
 
   return (
     <Container>
-      <input type="text" placeholder="Saindo de onde?" />
-      <input type="text" placeholder="Indo para onde?" />
-      <input type="date" />
-      <input type="date" />
+      <div className="inputs">
+        <input type="text" placeholder="Saindo de onde?" />
+        <input type="text" placeholder="Indo para onde?" />
+        <div className="dates">
+          <input type="date" />
+          <input type="date" />
+        </div>
+      </div>
+
       <button onClick={() => navigate('/comprar-passagem')}>
         Procurar passagens
       </button>

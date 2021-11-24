@@ -6,53 +6,53 @@ const Bus = function Bus() {
     <Container>
       <div className="acents">
         <div className="fileira1">
-          <Acent number="03" />
-          <Acent number="07" />
-          <Acent number="11" />
-          <Acent number="15" />
-          <Acent number="19" />
-          <Acent number="23" />
-          <Acent number="27" />
-          <Acent number="31" />
-          <Acent number="35" />
-          <Acent number="39" />
+          <Acent number="03" statusAcents={0} />
+          <Acent number="07" statusAcents={0} />
+          <Acent number="11" statusAcents={0} />
+          <Acent number="15" statusAcents={0} />
+          <Acent number="19" statusAcents={0} />
+          <Acent number="23" statusAcents={0} />
+          <Acent number="27" statusAcents={0} />
+          <Acent number="31" statusAcents={0} />
+          <Acent number="35" statusAcents={0} />
+          <Acent number="39" statusAcents={0} />
         </div>
 
         <div className="fileira2">
-          <Acent number="04" />
-          <Acent number="08" />
-          <Acent number="12" />
-          <Acent number="16" />
-          <Acent number="20" />
-          <Acent number="24" />
-          <Acent number="28" />
-          <Acent number="32" />
-          <Acent number="36" />
-          <Acent number="40" />
+          <Acent number="04" statusAcents={0} />
+          <Acent number="08" statusAcents={0} />
+          <Acent number="12" statusAcents={0} />
+          <Acent number="16" statusAcents={0} />
+          <Acent number="20" statusAcents={0} />
+          <Acent number="24" statusAcents={0} />
+          <Acent number="28" statusAcents={0} />
+          <Acent number="32" statusAcents={0} />
+          <Acent number="36" statusAcents={0} />
+          <Acent number="40" statusAcents={0} />
         </div>
         <div className="fileira3">
-          <Acent number="02" />
-          <Acent number="06" />
-          <Acent number="10" />
-          <Acent number="14" />
-          <Acent number="18" />
-          <Acent number="22" />
-          <Acent number="26" />
-          <Acent number="30" />
-          <Acent number="34" />
-          <Acent number="38" />
+          <Acent number="02" statusAcents={0} />
+          <Acent number="06" statusAcents={0} />
+          <Acent number="10" statusAcents={0} />
+          <Acent number="14" statusAcents={0} />
+          <Acent number="18" statusAcents={0} />
+          <Acent number="22" statusAcents={0} />
+          <Acent number="26" statusAcents={0} />
+          <Acent number="30" statusAcents={0} />
+          <Acent number="34" statusAcents={0} />
+          <Acent number="38" statusAcents={0} />
         </div>
         <div className="fileira4">
-          <Acent number="01" />
-          <Acent number="05" />
-          <Acent number="09" />
-          <Acent number="13" />
-          <Acent number="17" />
-          <Acent number="21" />
-          <Acent number="25" />
-          <Acent number="29" />
-          <Acent number="33" />
-          <Acent number="37" />
+          <Acent number="01" statusAcents={0} />
+          <Acent number="05" statusAcents={0} />
+          <Acent number="09" statusAcents={0} />
+          <Acent number="13" statusAcents={0} />
+          <Acent number="17" statusAcents={0} />
+          <Acent number="21" statusAcents={0} />
+          <Acent number="25" statusAcents={0} />
+          <Acent number="29" statusAcents={0} />
+          <Acent number="33" statusAcents={0} />
+          <Acent number="37" statusAcents={0} />
         </div>
       </div>
     </Container>

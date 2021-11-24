@@ -12,7 +12,6 @@ const Nav = function Nav() {
         <a href="/">LOGO</a>
       </h1>
       <NavBar>
-        <span>Atendimento</span>
         <button onClick={() => setOpenModal(true)}>Faça seu login</button>
         {openModal && (
           <ModalLogin statusModal={openModal} setOpenModal={setOpenModal} />

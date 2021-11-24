@@ -2,8 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 980px;
 
   > div {
     display: flex;
@@ -11,8 +13,6 @@ export const Container = styled.div`
   }
 
   .rota {
-    margin-left: 100px;
-
     ul,
     li,
     span {
@@ -27,7 +27,6 @@ export const Container = styled.div`
   }
 
   .price {
-    margin-left: 400px;
     font-size: 24px;
     font-weight: bold;
     color: var(--primary);
