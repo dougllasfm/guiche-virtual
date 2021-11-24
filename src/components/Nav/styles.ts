@@ -42,4 +42,21 @@ export const NavBar = styled.div`
       background: rgb(230, 255, 255, 0.25);
     }
   }
+
+  .price {
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  @media (max-width: 550px) {
+    > button {
+      display: none;
+    }
+
+    .price {
+      display: flex;
+    }
+  }
 `

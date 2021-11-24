@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-bind */
 /* eslint-disable consistent-return */
 /* eslint-disable prettier/prettier */
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { Label } from './styles'
 import { AcentContext } from '../../../contexts/AcentContext'
 
@@ -11,13 +11,21 @@ type Props = {
 }
 
 const Acent = function Acent({ number, statusAcents }: Props) {
-  const { acents, addAcent, removeAcent } = useContext(AcentContext)
-  const [acent, setAcent] = useState(statusAcents)
+  const { acents, addAcent, removeAcent, reserveds } = useContext(AcentContext)
+
+  const [acent, setAcent] = useState(() => {
+   if (reserveds.find(element => element === number) ) {
+     return reserveds.find(element => element === number)
+   }
+     return statusAcents
+
+  })
+
 
   function SetAcent() {
     if (acents.length <= 3) {
-      if (acent !== 2) {
-        if (acent === 1) {
+      if (statusAcents !== 2) {
+        if (statusAcents === 1) {
           setAcent(0)
           removeAcent(number)
         } else {
@@ -25,7 +33,7 @@ const Acent = function Acent({ number, statusAcents }: Props) {
           addAcent(number)
         }
       }
-    } else if (acent === 1) {
+    } else if (statusAcents === 1) {
       setAcent(0)
       removeAcent(number)
     } else alert('O limite de poltronas que vc pode comprar é 4!')
@@ -33,10 +41,10 @@ const Acent = function Acent({ number, statusAcents }: Props) {
 
   function classNameGeneration() {
     let name = 'not-reserved'
-    if (acent === 1) {
+    if (statusAcents === 1) {
       name = 'selected'
     }
-    if (acent === 2) {
+    if (statusAcents === 2) {
       name = 'reserved'
     }
     return name

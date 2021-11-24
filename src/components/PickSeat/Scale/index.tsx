@@ -8,7 +8,6 @@ const Scale = function Scale() {
   return (
     <Container>
       <div>
-        <span>Convencional</span>
         <b>Logo</b>
         <span>Rio novo</span>
       </div>

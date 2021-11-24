@@ -16,12 +16,12 @@ export const Container = styled.div`
     ul,
     li,
     span {
-      margin-left: 10px;
+      margin-left: 5px;
     }
 
     ul {
       li + li {
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
   }
@@ -30,5 +30,14 @@ export const Container = styled.div`
     font-size: 24px;
     font-weight: bold;
     color: var(--primary);
+    width: 15%;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 14px;
+
+    .price {
+      display: none;
+    }
   }
 `

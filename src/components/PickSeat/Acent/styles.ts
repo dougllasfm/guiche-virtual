@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Label = styled.label`
   padding: 5px 7px;
-  margin-right: 5px;
+  margin-right: 2px;
   border-radius: 5px;
   user-select: none;
 
@@ -25,5 +25,9 @@ export const Label = styled.label`
     color: #fff;
     cursor: pointer;
     text-decoration: none;
+  }
+
+  @media (max-width: 550px) {
+    transform: rotate(270deg);
   }
 `

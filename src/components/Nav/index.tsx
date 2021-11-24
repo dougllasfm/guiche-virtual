@@ -1,9 +1,11 @@
 /* eslint-disable react/button-has-type */
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { AcentContext } from '../../contexts/AcentContext'
 import ModalLogin from '../ModalLogin'
 import { Container, NavBar } from './styles'
 
 const Nav = function Nav() {
+  const { acents } = useContext(AcentContext)
   const [openModal, setOpenModal] = useState(false)
 
   return (
@@ -16,6 +18,7 @@ const Nav = function Nav() {
         {openModal && (
           <ModalLogin statusModal={openModal} setOpenModal={setOpenModal} />
         )}
+        <div className="price">R$ {acents.length * 80.0}</div>
       </NavBar>
     </Container>
   )
