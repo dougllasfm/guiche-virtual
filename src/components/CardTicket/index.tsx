@@ -20,12 +20,12 @@ const CardTicket = function CardTicket() {
       <Schedules>
         <div className="current">
           <h2>8:30</h2>
-          <h5>Querência - MT</h5>
+          <h5>Cidade atual</h5>
         </div>
         <div className="fio" />
         <div className="destiny">
           <h2>17:00</h2>
-          <h5>Barra do garças - MT</h5>
+          <h5>Cidade destino</h5>
         </div>
       </Schedules>
       <Confirm>

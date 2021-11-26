@@ -15,11 +15,11 @@ const Scale = function Scale() {
         <ul>
           <li>
             <b>22:15</b>
-            <span>Querência - MT</span>
+            <span>Cidade atual</span>
           </li>
           <li>
             <b>05:15</b>
-            <span>Barra do Garças</span>
+            <span>Cidade destino</span>
           </li>
         </ul>
       </div>

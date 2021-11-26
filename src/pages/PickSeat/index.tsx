@@ -27,7 +27,7 @@ const PickSeat = function PickSeat() {
   return (
     <Container>
       <Nav />
-      <Header>Ida para Barra do Garças</Header>
+      <Header>Ida para Cidade destino</Header>
       <Main>
         <Scale />
         <Bus />
