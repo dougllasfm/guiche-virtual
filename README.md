@@ -21,7 +21,7 @@ Clone do guiche virtual que agora se chama buson, na página em que seleciona as
 https://github.com/dougllasfm/guiche-virtual.git
 
 # Instalando dependencias
-$ guiche-virtual
+$ cd guiche-virtual
 $ npm install
 
 # Executa o projeto
