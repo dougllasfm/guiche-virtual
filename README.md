@@ -1,4 +1,4 @@
-# Hoteis.com clone
+# Guiche-virtual (Buson)
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/dougllasfm/guiche-virtual/blob/main/LICENSE) 
 
 # Sobre o projeto
