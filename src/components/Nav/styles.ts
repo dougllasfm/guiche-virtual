@@ -13,6 +13,7 @@ export const Container = styled.div`
 
   h1 {
     color: #fff;
+    font-size: 22px;
 
     a {
       text-decoration: none;

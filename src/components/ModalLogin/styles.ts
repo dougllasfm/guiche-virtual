@@ -75,6 +75,7 @@ export const Form = styled.form`
   .submit {
     width: 50%;
     background: var(--orange);
+    color: #fff;
     padding: 10px;
     border-radius: 5px;
   }

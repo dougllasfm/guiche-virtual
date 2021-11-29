@@ -30,23 +30,46 @@ export const Schedules = styled.div`
   text-align: center;
 
   .current {
-    > h2,
-    h5 {
+    > h2 {
+      font-size: 18px;
+    }
+    > h5 {
       font-size: 14px;
+      font-weight: 400;
     }
   }
 
   .destiny {
-    > h2,
-    h5 {
+    > h2 {
+      font-size: 18px;
+    }
+    > h5 {
       font-size: 14px;
+      font-weight: 400;
     }
   }
 
+  .point {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+    background-color: #071251;
+    content: '';
+  }
+
   .fio {
-    margin: 0 3px;
     width: 120px;
-    border: 1px solid black;
+    border: 0.5px solid var(--primary);
+  }
+
+  .point-end {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 4px;
+    background-color: var(--blue);
+    content: '';
   }
 
   div {
@@ -69,6 +92,10 @@ export const Confirm = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  strong {
+    font-size: 18px;
+  }
 
   button {
     margin-left: 25px;

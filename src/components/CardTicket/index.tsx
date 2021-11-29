@@ -14,7 +14,7 @@ const CardTicket = function CardTicket() {
       <Company>
         <span>Convencional</span>
         <p>logo</p>
-        <span>Rio Novo</span>
+        <span>Empresa</span>
       </Company>
 
       <Schedules>
@@ -22,7 +22,9 @@ const CardTicket = function CardTicket() {
           <h2>8:30</h2>
           <h5>Cidade atual</h5>
         </div>
+        <div className="point" />
         <div className="fio" />
+        <div className="point-end" />
         <div className="destiny">
           <h2>17:00</h2>
           <h5>Cidade destino</h5>

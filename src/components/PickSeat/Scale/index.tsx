@@ -9,7 +9,7 @@ const Scale = function Scale() {
     <Container>
       <div>
         <b>Logo</b>
-        <span>Rio novo</span>
+        <span>Nome da empresa</span>
       </div>
       <div className="rota">
         <ul>

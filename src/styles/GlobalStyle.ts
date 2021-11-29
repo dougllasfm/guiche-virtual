@@ -12,9 +12,6 @@ export default createGlobalStyle`
     min-height: 100%;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 16px;
-  }
 
   *, button, input {
     border: 0;
